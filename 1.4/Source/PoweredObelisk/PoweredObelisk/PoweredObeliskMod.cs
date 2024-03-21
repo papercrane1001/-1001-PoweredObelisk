@@ -11,10 +11,10 @@ namespace PoweredObelisk
 {
     public class PoweredObeliskMod : Mod
     {
-        public Settings settings;
+        public PoweredObeliskSettings settings;
         public PoweredObeliskMod(ModContentPack content) : base(content)
         { 
-            this.settings = base.GetSettings<Settings>();
+            this.settings = base.GetSettings<PoweredObeliskSettings>();
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

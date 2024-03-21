@@ -14,7 +14,7 @@ namespace PoweredObelisk
         {
             get
             {
-                return LoadedModManager.GetMod<PoweredObeliskMod>().GetSettings<Settings>();
+                return LoadedModManager.GetMod<PoweredObeliskMod>().GetSettings<PoweredObeliskSettings>();
             }
         }
     }
