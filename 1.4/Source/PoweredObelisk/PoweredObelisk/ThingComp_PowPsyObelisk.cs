@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 using RimWorld;
-//using PsyObelisk;
 using Verse;
 
 namespace PoweredObelisk
@@ -28,7 +27,7 @@ namespace PoweredObelisk
         {
             get
             {
-                return (float)Utilities.Settings.psyFocusMax
+                return (float)PoweredObeliskUtilties.Settings.psyFocusMax;
             }
         }
 

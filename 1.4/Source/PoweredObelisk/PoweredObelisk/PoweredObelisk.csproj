@@ -34,9 +34,6 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="PsyObelisk">
-      <HintPath>..\..\..\..\..\..\..\..\workshop\content\294100\2614248835\1.4\Assemblies\PsyObelisk.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompProperties_PowPsyObelisk.cs" />
+    <Compile Include="PoweredObeliskMod.cs" />
+    <Compile Include="PoweredObeliskUtilties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingComp_PowPsyObelisk.cs" />
   </ItemGroup>

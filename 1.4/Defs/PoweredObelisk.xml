@@ -4,12 +4,11 @@
 		<defName>PoweredAnimaObelisk_ThingDef_AnimaObelisk</defName>
 		<label>Powered Anima Obelisk</label>
 		<description>dflksaflkdsalf</description>
-		<size>(3,3)</size>
+		<size>(1,2)</size>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<texPath>Things/Buildings/PsyObelisk/PsyObelisk</texPath>
-			<drawSize>(7,7)</drawSize>
+			<texPath>PsyBattery</texPath>
+			<drawSize>(2,3)</drawSize>
 			<drawOffset>(0,0,0)</drawOffset>
 			<shadowData>
 				<volume>(2.2, 1, 2.2)</volume>
@@ -33,7 +32,7 @@
 			<MaxHitPoints>500</MaxHitPoints>
 			<Beauty>25</Beauty>
 		</statBases>
-		<rotatable>false</rotatable>
+		<rotatable>True</rotatable>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
 		<designationCategory>Misc</designationCategory>
 		<passability>Standable</passability>
@@ -47,18 +46,13 @@
 		<placeWorkers>
 			<li>PlaceWorker_MeditationSpot</li>
 		</placeWorkers>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_UsesMeditationFocus"/>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Dignified</li>
-					<li>Natural</li>
-					<li>Artistic</li>
-					<li>Morbid</li>
-					<li>Minimal</li>
-					<li>Flame</li>
-				</focusTypes>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>

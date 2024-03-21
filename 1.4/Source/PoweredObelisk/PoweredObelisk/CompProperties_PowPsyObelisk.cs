@@ -14,7 +14,7 @@ namespace PoweredObelisk
     {
         public CompProperties_PowPsyObelisk()
         {
-            this.compClass = typeof(ThingComp_PowPsyObelisk)
+            this.compClass = typeof(ThingComp_PowPsyObelisk);
         }
     }
 }
