@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="CompProperties_PowPsyObelisk.cs" />
     <Compile Include="PoweredObeliskMod.cs" />
+    <Compile Include="PoweredObeliskSettings.cs" />
     <Compile Include="PoweredObeliskUtilties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingComp_PowPsyObelisk.cs" />
